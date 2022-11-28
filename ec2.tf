@@ -8,6 +8,6 @@ resource "aws_instance" "weppy" {
   encrypted     = true
   }
   tags = {
-    Name = "airbnb-wepserver"
+    Name = "airbnb-wepserver-instance"
   }
 }
