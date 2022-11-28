@@ -3,6 +3,10 @@ resource "aws_instance" "weppy" {
   instance_type = var.server
   monitoring = true
   ebs_optimized = true
+
+  root_block_device {
+  encrypted     = true
+  }
   tags = {
     Name = "airbnb-wepserver"
   }
